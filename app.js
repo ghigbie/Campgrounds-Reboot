@@ -10,6 +10,12 @@ app.get('/', (req, res) =>{
     res.send("Yo");
 });
 
+app.get('/campgrounds', (req, res) => {
+    console.log('On the /campgrounds page');
+    res.send("Yo campgrounds");
+});
+
 app.listen(port, ip, ()=> {
    console.log(`Server is listening on ${port}`); 
 });
+
