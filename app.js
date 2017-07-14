@@ -7,7 +7,7 @@ const port = process.env.PORT,
 
 app.get('/', (req, res) =>{
     console.log('On the / page');
-    res.send("Yo");
+    res.render('landing.ejs');
 });
 
 app.get('/campgrounds', (req, res) => {
