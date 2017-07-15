@@ -22,6 +22,11 @@ app.get('/campgrounds', (req, res) => {
     res.render('campgrounds', {campgrounds: campgrounds});
 });
 
+app.post('/campgrounds', (req, res) => {
+    console.log("POST route was hit");
+    res.send("You hit the POST route");
+});
+
 app.get('*', (req, res) => {
     res.render('notfound');
 });
