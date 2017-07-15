@@ -28,6 +28,10 @@ app.post('/campgrounds', (req, res) => {
     res.send("You hit the POST route");
 });
 
+app.get('/campgrounds/new', (req, res) => {
+    res.render('new.ejs'); 
+});
+
 app.get('*', (req, res) => {
     res.render('notfound');
 });
