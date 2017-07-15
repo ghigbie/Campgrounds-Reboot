@@ -19,7 +19,7 @@ app.get('/campgrounds', (req, res) => {
         {name: "Resting Trees", image: "http://www.heartsandmindsbooks.com/Hiking-Shoes-588x391.jpg"},
         {name: "Lookout Range", image: "http://visitsedona.com/wp-content/uploads/2015/05/peach-sky-web.jpg"}, ];
     console.log('On the /campgrounds page');
-    res.send("Yo campgrounds");
+    res.render('campgrounds', {campgrounds: campgrounds});
 });
 
 app.get('*', (req, res) => {
