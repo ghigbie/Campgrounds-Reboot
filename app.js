@@ -1,10 +1,11 @@
 const express = require('express'),
-          ejs = require('ejs'),
+   bodyParser = require('body-parser'),
           app = express();
 
 const port = process.env.PORT,
         ip = process.env.IP;
 
+app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) =>{
