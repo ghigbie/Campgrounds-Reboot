@@ -29,7 +29,7 @@ app.post('/campgrounds', (req, res) => {
 });
 
 app.get('/campgrounds/new', (req, res) => {
-    res.render('new.ejs'); 
+    res.render('new'); 
 });
 
 app.get('*', (req, res) => {
